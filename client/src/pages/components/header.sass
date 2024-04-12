@@ -1,0 +1,43 @@
+.header
+
+.container
+    margin: 0 auto
+    max-width: 80%
+
+.header-content
+    user-select: none
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 2rem 2rem
+
+    h2
+        font-size: 2rem
+
+    p
+        position: absolute
+        left: 50% // Переміщуємо елемент на 50% ширини від лівого краю .header-content
+        transform: translateX(-50%)
+
+.header-btns-wrapper
+    display: flex
+    gap: 2rem
+
+    a
+        display: flex
+        justify-content: center
+        align-items: center
+        text-decoration: none
+        color: black
+        text-transform: uppercase
+        font-weight: 500
+        width: 7rem
+        height: 2.5rem
+        border: 0.1rem solid black
+        border-radius: 0.2rem
+        transition: all 0.3s ease-in
+
+    a:hover
+        background-color: black
+        color: white
