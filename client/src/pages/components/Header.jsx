@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.sass";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,8 +10,8 @@ const Header = () => {
           <h2>BLOG ARENA</h2>
           <p>Create & Share</p>
           <div className="header-btns-wrapper">
-            <a href="/register">Register</a>
-            <a href="/login">Login</a>
+            <Link to="/register">Register</Link>
+            <Link to="/login">Login</Link>
           </div>
         </div>
       </div>
